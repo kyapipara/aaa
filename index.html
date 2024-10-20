@@ -66,8 +66,8 @@
 
         $(function () {
             $('form').submit(function () {
-                const buy = $('input[name="name"]').val();
-                const price = $('input[name="udetate"]').val();
+                const buy = $('input[name="buy"]').val();
+                const price = $('input[name="price"]').val();
                 const msg = `${buy}\n${price}\n`;
                 sendText(msg);
                 return false;
